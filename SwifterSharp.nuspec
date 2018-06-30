@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata minClientVersion="2.12">
+    <id>SwifterSharp</id>
+    <version>0.1.0</version>
+    <title>SwifterSharp</title>
+    <authors>Brian Drupieski</authors>
+    <summary>Make C# more like Swift</summary>
+    <description>Code analyzers and utilities to provide and enforce Swift paradigms and constructs in C#.</description>
+    <language>en-US</language>
+    <projectUrl>https://github.com/bdrupieski/SwifterSharp</projectUrl>
+    <licenseUrl>https://raw.githubusercontent.com/bdrupieski/SwifterSharp/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>swiftersharp, swiftersharp.analyzers, swift, analyzers, roslyn</tags>
+  </metadata>
+  <files>
+    <file src="SwifterSharp\bin\Release\netstandard1.1\SwifterSharp.dll" target="lib\netstandard1.1\" />
+    <file src="SwifterSharp.Analyzers\bin\Release\netstandard1.3\*.dll" target="analyzers\dotnet\cs\" />
+    <file src="SwifterSharp.Analyzers\Tools\*.ps1" target="tools\" />
+  </files>
+</package>
