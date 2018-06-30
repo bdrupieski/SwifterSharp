@@ -2,6 +2,8 @@
 
 Make C# more like Swift.
 
+<a href="https://www.nuget.org/packages/SwifterSharp"><img src="https://img.shields.io/nuget/v/SwifterSharp.svg?style=flat"></a>
+
 ## Summary
 
 This project is a collection of C# code analyzers that make C# act 
