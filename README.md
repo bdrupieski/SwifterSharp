@@ -53,7 +53,24 @@ With all arguments named:
 ![Force Named Arguments Fixed](images/ForceNamedArguments-Fixed.png)
 
 There's currently no code fix for this error in this package.
-Additionally, this attribute can only target methods. It could
-also conceivably target individual method parameters, selectively
+Additionally, this attribute currently only targets method. It could
+conceivably also target individual method parameters, selectively
 requiring some but not all arguments to be named.
 
+## Configuring Analyzers
+
+Analyzer rule severity can be changed by right-clicking the analyzer in
+the solution explorer in Visual Studio. For example, to change the
+ForceNamedArguments analyzer from its default, an error, to a warning:
+
+![Change Analyzer Severity](images/ChangeAnalyzerSeverity.png)
+
+If you're not using Visual Studio, since you don't need to in today's
+cross-platform world, you can also add a ruleset to your project
+or solution and add entries to change SwifterSharp rule severities:
+
+```xml
+<Rules AnalyzerId="SwifterSharp.Analyzers" RuleNamespace="SwifterSharp.Analyzers">
+  <Rule Id="SwifterSharp1000" Action="Warning" />
+</Rules>
+```
