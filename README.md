@@ -53,7 +53,7 @@ With all arguments named:
 ![Force Named Arguments Fixed](images/ForceNamedArguments-Fixed.png)
 
 There's currently no code fix for this error in this package.
-Additionally, this attribute currently only targets method. It could
+Additionally, this attribute currently only targets methods. It could
 conceivably also target individual method parameters, selectively
 requiring some but not all arguments to be named.
 
